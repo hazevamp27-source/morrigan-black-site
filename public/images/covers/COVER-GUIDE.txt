@@ -1,0 +1,46 @@
+============================================
+  BOOK COVER IMAGE GUIDE - Morrigan Black Site
+============================================
+
+Copy your book cover images into THIS folder and rename them exactly as listed below.
+Use .jpg format for best file size. PNG works too — just update the file extension in
+src/content/books.json if you use .png instead.
+
+SERIES: Knotty Alpha Guards
+--------------------------
+  single-dads-fake-mate.jpg      → The Single Dad's Fake Mate (Bk 1)
+  guarding-mannys-fanny.jpg      → Guarding the Manny's Fanny (Bk 2)
+  knot-his-cherry-boy.jpg        → Knot His Cherry Boy (Bk 3)
+  knotting-playboy-omega.jpg     → Knotting the Playboy Omega (Bk 4)
+
+SERIES: Highland Wolves
+-----------------------
+  claimed-alpha-laird.jpg        → Claimed by the Alpha Laird (Bk 1)
+  mated-beast-alpha.jpg          → Mated to the Beast Alpha (Bk 2)
+
+SERIES: Taken by the Titan
+---------------------------
+  taken-by-titan.jpg             → Taken by the Titan (Bk 1)
+  taken-by-titan-homecoming.jpg  → Taken by the Titan: Homecoming (Bk 2)
+
+SERIES: Offworld Meat Market
+-----------------------------
+  property-leviathan.jpg         → Property of the Leviathan (Bk 1)
+  sold-beast-lord.jpg            → Sold! To the Beast Lord (Bk 2)
+  owned-by-swarm.jpg             → Owned by the Swarm! (Coming Soon)
+
+STANDALONES
+-----------
+  blood-curse.jpg                → Blood Curse
+  brass-knuckle-alpha.jpg        → Brass Knuckle Alpha
+  bred-alien-prince.jpg          → Bred by the Alien Prince
+  dracula-bound-blood.jpg        → Dracula: Bound in Blood
+  fixing-pumpkin-king.jpg        → Fixing the Grumpy Pumpkin King
+  marked-chained-moon.jpg        → Marked Under the Chained Moon
+  umami.jpg                      → Umami
+  wolf-in-law-daddy.jpg          → Wolf-In-Law Daddy
+
+============================================
+TIP: For best results, use cover images that are at least 600px wide.
+     The site will handle resizing automatically.
+============================================

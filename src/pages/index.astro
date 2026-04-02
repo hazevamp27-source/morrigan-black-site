@@ -1,0 +1,623 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Home">
+
+<!-- ===== NAV ===== -->
+<nav class="fixed top-0 w-full z-50 glass-nav" id="mainNav">
+  <div class="flex justify-between items-center w-full px-6 md:px-8 py-4 md:py-5">
+    <div class="flex items-center gap-8 md:gap-12">
+      <a href="#" class="text-xl md:text-2xl font-extrabold tracking-tighter text-primary">Morrigan Black</a>
+      <div class="hidden md:flex items-center gap-8 font-headline text-xs tracking-[0.2em] uppercase">
+        <a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Home</a>
+        <a class="text-on-surface/60 hover:text-primary transition-colors" href="#backlist">Books</a>
+        <a class="text-on-surface/60 hover:text-primary transition-colors" href="#about-section">About</a>
+        <a class="text-on-surface/60 hover:text-primary transition-colors" href="#contact-section">Contact</a>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="https://www.youtube.com/@MorriganBlack" target="_blank" rel="noopener noreferrer"
+         class="hidden sm:inline-flex items-center gap-2 bg-youtube-red/10 border border-youtube-red/30 text-youtube-red px-5 py-2 rounded-sm text-xs font-bold uppercase tracking-[0.15em] hover:bg-youtube-red/20 transition-all">
+        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+        YouTube
+      </a>
+      <button class="md:hidden text-on-surface/80 hover:text-primary transition-colors p-1" id="mobileToggle" aria-label="Toggle menu">
+        <span class="material-symbols-outlined text-2xl" id="menuIcon">menu</span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu md:hidden px-6 bg-surface-container-lowest/95 backdrop-blur-xl border-t border-primary/10" id="mobileMenu">
+    <div class="flex flex-col gap-4 py-6 font-headline text-sm tracking-[0.15em] uppercase">
+      <a class="text-primary font-bold" href="#">Home</a>
+      <a class="text-on-surface/60 hover:text-primary transition-colors" href="#backlist">Books</a>
+      <a class="text-on-surface/60 hover:text-primary transition-colors" href="#about-section">About</a>
+      <a class="text-on-surface/60 hover:text-primary transition-colors" href="#contact-section">Contact</a>
+      <a href="https://www.youtube.com/@MorriganBlack" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center justify-center gap-2 bg-youtube-red text-white px-6 py-3 rounded-sm text-xs font-bold uppercase tracking-[0.15em] mt-2">
+        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+        YouTube
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<!-- ===== HERO ===== -->
+<section class="relative h-[92vh] min-h-[650px] w-full overflow-hidden bg-surface-container-lowest">
+  <div class="absolute inset-0">
+    <img alt="Owned by the Swarm cover art" class="w-full h-full object-cover"
+         src="/images/covers/ownedbytheswarmbk3.png"/>
+    <div class="absolute inset-0 hero-gradient"></div>
+  </div>
+
+  <div class="relative h-full flex flex-col justify-end px-6 md:px-16 pb-24 md:pb-32 max-w-7xl mx-auto animate-hero">
+    <div class="mb-5 flex items-center gap-4 flex-wrap">
+      <span class="px-3 py-1 bg-primary/10 border border-primary/30 text-primary text-[10px] font-bold tracking-[0.2em] rounded-sm uppercase">New Release</span>
+      <span class="flex items-center gap-1.5 text-primary text-xs font-bold">
+        <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+        Offworld Meat Market &mdash; Book 3
+      </span>
+    </div>
+
+    <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-black text-on-surface leading-[0.9] tracking-tighter mb-4 max-w-3xl uppercase">
+      Owned by<br/>the Swarm!
+    </h1>
+
+    <p class="text-on-surface/70 text-base md:text-lg max-w-xl mb-8 leading-relaxed">
+      Smuggler Topaz Cruz thought he'd seen every corner of the galaxy's underworld &mdash; until the Anzinian swarm collective claimed him as theirs.
+    </p>
+
+    <div class="flex flex-wrap items-center gap-3 mb-10">
+      <span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-wider rounded-full">Reverse Harem</span>
+      <span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-wider rounded-full">Gangbang</span>
+      <span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-wider rounded-full">Enemies to Lovers</span>
+    </div>
+
+    <div class="flex items-center gap-4 flex-wrap">
+      <!-- TODO: Replace # with Owned by the Swarm Amazon link when published -->
+      <a href="#"
+         class="bg-primary hover:bg-primary/90 text-on-primary px-8 md:px-10 py-4 rounded-sm font-bold flex items-center gap-2 transition-all active:scale-95 shadow-[0px_10px_30px_rgba(0,229,204,0.3)] text-sm md:text-base">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+        Read Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTENT AREA ===== -->
+<div class="relative -mt-20 z-10 space-y-20 md:space-y-28 pb-24 md:pb-32">
+
+  <!-- Offworld Meat Market Series -->
+  <section class="px-6 md:px-16" id="books-section">
+    <div class="flex items-baseline justify-between mb-8">
+      <h2 class="font-headline text-xl md:text-2xl text-on-surface font-black tracking-tight flex items-center gap-3">
+        Offworld Meat Market Series
+        <span class="material-symbols-outlined text-primary text-xl">chevron_right</span>
+      </h2>
+    </div>
+    <div class="scroll-row">
+      <button class="scroll-arrow-btn left" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:-300,behavior:'smooth'})">
+        <span class="material-symbols-outlined text-lg">chevron_left</span>
+      </button>
+      <button class="scroll-arrow-btn right" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:300,behavior:'smooth'})">
+        <span class="material-symbols-outlined text-lg">chevron_right</span>
+      </button>
+    <div class="book-scroll flex gap-4 md:gap-6 overflow-x-auto no-scrollbar pr-16">
+      <div class="flex-none w-48 md:w-72 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Property of the Leviathan" class="w-full h-full object-cover" src="/images/covers/property of the leviathan_bk1.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-4 md:p-6 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] mb-1">Book 1</p>
+            <h3 class="text-on-surface font-bold text-base md:text-xl leading-tight">Property of the Leviathan</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1.5 mt-3">
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Tentacles</span>
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Alien</span>
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Milking</span>
+        </div>
+      </div>
+
+      <div class="flex-none w-48 md:w-72 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Sold to the Beast Lord" class="w-full h-full object-cover" src="/images/covers/sold to the beast lord_bk2.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-4 md:p-6 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] mb-1">Book 2</p>
+            <h3 class="text-on-surface font-bold text-base md:text-xl leading-tight">Sold! To the Beast Lord</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1.5 mt-3">
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Size Difference</span>
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Monster</span>
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Frottage</span>
+        </div>
+      </div>
+
+      <div class="flex-none w-48 md:w-72 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5 border-2 border-primary/30">
+          <img alt="Owned by the Swarm" class="w-full h-full object-cover" src="/images/covers/ownedbytheswarmbk3.png"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute top-3 right-3">
+            <span class="bg-primary/90 text-on-primary text-[9px] font-black uppercase tracking-[0.15em] px-3 py-1 rounded-sm">Coming Soon</span>
+          </div>
+          <div class="absolute bottom-0 left-0 p-4 md:p-6 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] mb-1">Book 3</p>
+            <h3 class="text-on-surface font-bold text-base md:text-xl leading-tight">Owned by the Swarm!</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1.5 mt-3">
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Reverse Harem</span>
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Gangbang</span>
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Enemies to Lovers</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Tagline -->
+  <section class="px-6 md:px-16 text-center">
+    <div class="max-w-2xl mx-auto py-4">
+      <p class="text-on-surface/25 text-lg md:text-2xl font-headline italic leading-relaxed">
+        "Boys kissing boys. Sometimes with forked tongues.<br class="hidden md:block"/>
+        <span class="text-primary/50">Always</span> with happy endings."
+      </p>
+    </div>
+  </section>
+
+  <!-- Knotty Alpha Guards -->
+  <section class="px-6 md:px-16" id="backlist">
+    <h2 class="font-headline text-lg md:text-xl text-on-surface font-black tracking-tight flex items-center gap-2 mb-6">
+      Knotty Alpha Guards
+      <span class="text-primary/60 text-sm font-bold">&mdash; 4 Books</span>
+    </h2>
+    <div class="scroll-row">
+      <button class="scroll-arrow-btn left" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:-300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_left</span></button>
+      <button class="scroll-arrow-btn right" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_right</span></button>
+    <div class="book-scroll flex gap-3 md:gap-5 overflow-x-auto no-scrollbar pr-16">
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="The Single Dad's Fake Mate" class="w-full h-full object-cover" src="/images/covers/single dads fake mate_bk1.jpeg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 1</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">The Single Dad's Fake Mate</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Fake Dating</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Single Dad</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Forced Proximity</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Guarding the Manny's Fanny" class="w-full h-full object-cover" src="/images/covers/guarding the mannys fanny_bk2.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 2</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Guarding the Manny's Fanny</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Second Chance</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Knot His Cherry Boy" class="w-full h-full object-cover" src="/images/covers/knot his cherry boy_bk3.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 3</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Knot His Cherry Boy</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Virgin</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Enemies to Lovers</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Forced Proximity</span>
+        </div>
+      </div>
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Knotting the Playboy Omega" class="w-full h-full object-cover" src="/images/covers/knotting the playboy omega_bk4.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 4</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Knotting the Playboy Omega</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Billionaire</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Power Bottom</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Grumpy/Sunshine</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Highland Wolves -->
+  <section class="px-6 md:px-16">
+    <h2 class="font-headline text-lg md:text-xl text-on-surface font-black tracking-tight flex items-center gap-2 mb-6">
+      Highland Wolves
+      <span class="text-primary/60 text-sm font-bold">&mdash; 2 Books</span>
+    </h2>
+    <div class="scroll-row">
+      <button class="scroll-arrow-btn left" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:-300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_left</span></button>
+      <button class="scroll-arrow-btn right" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_right</span></button>
+    <div class="book-scroll flex gap-3 md:gap-5 overflow-x-auto no-scrollbar pr-16">
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Claimed by the Alpha Laird" class="w-full h-full object-cover" src="/images/covers/claimed by the alpha laird_bk1.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 1</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Claimed by the Alpha Laird</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Fated Mates</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Time Travel</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Mated to the Beast Alpha" class="w-full h-full object-cover" src="/images/covers/mated to the beast alpha_bk2.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 2</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Mated to the Beast Alpha</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Fated Mates</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Time Travel</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Taken by the Titan -->
+  <section class="px-6 md:px-16">
+    <h2 class="font-headline text-lg md:text-xl text-on-surface font-black tracking-tight flex items-center gap-2 mb-6">
+      Taken by the Titan
+      <span class="text-primary/60 text-sm font-bold">&mdash; 2 Books</span>
+    </h2>
+    <div class="scroll-row">
+      <button class="scroll-arrow-btn left" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:-300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_left</span></button>
+      <button class="scroll-arrow-btn right" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_right</span></button>
+    <div class="book-scroll flex gap-3 md:gap-5 overflow-x-auto no-scrollbar pr-16">
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Taken by the Titan" class="w-full h-full object-cover" src="/images/covers/taken by the titan_bk1.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 1</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Taken by the Titan</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Size Difference</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Enslavement</span>
+        </div>
+      </div>
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Taken by the Titan: Homecoming" class="w-full h-full object-cover" src="/images/covers/taken by the titan homecoming_bk2.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 2</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Taken by the Titan: Homecoming</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Size Difference</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Enslavement</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Oneshots -->
+  <section class="px-6 md:px-16">
+    <h2 class="font-headline text-lg md:text-xl text-on-surface font-black tracking-tight flex items-center gap-2 mb-6">
+      Oneshots
+      <span class="text-primary/60 text-sm font-bold">&mdash; 8 Titles</span>
+    </h2>
+    <div class="grid grid-cols-4 gap-2 md:gap-3">
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Dracula: Bound in Blood" class="w-full h-full object-cover" src="/images/covers/dracula bound in blood.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Dracula: Bound in Blood</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Vampire</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Gothic Romance</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Blood Curse" class="w-full h-full object-cover" src="/images/covers/blood curse.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Blood Curse</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Vampire</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Urban Fantasy</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Marked Under the Chained Moon" class="w-full h-full object-cover" src="/images/covers/marked under the chained moon.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Marked Under the Chained Moon</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Rejected Mates</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Prison</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Forced Proximity</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Second Chance</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Wolf Shifter</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Umami" class="w-full h-full object-cover" src="/images/covers/umami.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Umami</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Demons</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Billionaire</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Gothic</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Wolf-In-Law Daddy" class="w-full h-full object-cover" src="/images/covers/daddy wolf in law.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Wolf-In-Law Daddy</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Father-in-Law/Son-in-Law</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Age Difference</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Wolf Shifter</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Bred by the Alien Prince" class="w-full h-full object-cover" src="/images/covers/bred by the alien prince.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Bred by the Alien Prince</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Captivity</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Fated Mates</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Fixing the Grumpy Pumpkin King" class="w-full h-full object-cover" src="/images/covers/fixing the grumpy pumpkin king.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Fixing the Grumpy Pumpkin King</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Grumpy/Sunshine</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Halloween</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Brass Knuckle Alpha" class="w-full h-full object-cover" src="/images/covers/brass knuckle alpha.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Brass Knuckle Alpha</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Fated Mates</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube CTA -->
+  <section class="px-6 md:px-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="bg-surface-container-high rounded-lg p-8 md:p-10 flex flex-col md:flex-row items-center justify-between border-l-8 border-youtube-red relative overflow-hidden youtube-glow group/yt transition-all duration-500">
+        <div class="absolute -right-16 -top-16 opacity-[0.03] group-hover/yt:opacity-[0.07] transition-opacity pointer-events-none">
+          <svg fill="currentColor" height="300" width="300" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </div>
+        <div class="relative z-10 mb-6 md:mb-0 md:max-w-2xl">
+          <h3 class="text-on-surface font-black text-2xl md:text-3xl mb-3 flex items-center gap-3">
+            <span class="material-symbols-outlined text-youtube-red text-3xl md:text-4xl" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+            Listen Free on YouTube
+          </h3>
+          <p class="text-on-surface/60 text-sm md:text-base leading-relaxed">
+            Full audiobook versions of my published books &mdash; free to listen, anytime. Subscribe so you don't miss new uploads.
+          </p>
+        </div>
+        <div class="relative z-10 w-full md:w-auto">
+          <a href="https://www.youtube.com/@MorriganBlack" target="_blank" rel="noopener noreferrer"
+             class="bg-youtube-red text-white px-10 py-4 rounded-sm font-black text-sm uppercase flex items-center justify-center gap-3 w-full md:w-auto transition-all hover:scale-[1.03] active:scale-95 shadow-xl shadow-youtube-red/20">
+            <span class="material-symbols-outlined text-xl">subscriptions</span>
+            Subscribe Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patreon CTA -->
+  <section class="px-6 md:px-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="bg-surface-container-high rounded-lg p-8 md:p-10 flex flex-col md:flex-row items-center justify-between border-l-8 border-patreon-coral relative overflow-hidden patreon-glow group/pat transition-all duration-500">
+        <div class="relative z-10 mb-6 md:mb-0 md:max-w-2xl">
+          <h3 class="text-on-surface font-black text-2xl md:text-3xl mb-3 flex items-center gap-3">
+            <span class="material-symbols-outlined text-patreon-coral text-3xl md:text-4xl" style="font-variation-settings: 'FILL' 1;">headphones</span>
+            Uncut Audiobooks on Patreon
+          </h3>
+          <p class="text-on-surface/60 text-sm md:text-base leading-relaxed">
+            The full, uncensored audiobook versions with every spicy scene intact &mdash; available to purchase on Patreon.
+          </p>
+        </div>
+        <div class="relative z-10 w-full md:w-auto">
+          <a href="https://www.patreon.com/c/MorriganBlack452" target="_blank" rel="noopener noreferrer"
+             class="bg-patreon-coral text-white px-10 py-4 rounded-sm font-black text-sm uppercase flex items-center justify-center gap-3 w-full md:w-auto transition-all hover:scale-[1.03] active:scale-95 shadow-xl shadow-patreon-coral/20">
+            <span class="material-symbols-outlined text-xl">loyalty</span>
+            Join Patreon
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="px-6 md:px-16" id="about-section">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-headline text-2xl md:text-3xl font-black mb-6 tracking-tight">
+        About <span class="text-primary">Morrigan Black</span>
+      </h2>
+      <p class="text-on-surface/60 text-base md:text-lg leading-relaxed mb-6">
+        I've been writing since I was 15, and somewhere along the way I fell head-first into a world of vampires, werewolves, and things with too many teeth &#129499;&#128058; I write gay romance because monsters deserve a love that consumes them too &mdash; dark, spicy, and unapologetically queer. Gothic at heart, chaotic by nature, and bossed around daily by a Yorkie who thinks he runs this operation &#128062;&#128081;
+      </p>
+      <p class="text-on-surface/30 text-sm italic">
+        "Where the monsters are hot and the drama is hotter." &#128293;
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="px-6 md:px-16" id="contact-section">
+    <div class="max-w-xl mx-auto">
+      <div class="text-center mb-8">
+        <h2 class="font-headline text-2xl md:text-3xl font-black mb-3 tracking-tight">Get in Touch</h2>
+        <p class="text-on-surface/50 text-sm">For inquiries or just to say hi.</p>
+      </div>
+
+      <form action="https://formspree.io/f/xvzvbljw" method="POST" class="space-y-5">
+        <div>
+          <label for="name" class="block text-xs font-bold uppercase tracking-[0.15em] text-on-surface/50 mb-2">Name</label>
+          <input type="text" name="name" id="name" required
+                 class="w-full bg-surface-container-high border border-white/10 rounded-sm px-4 py-3 text-sm text-on-surface placeholder-on-surface/30 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all"
+                 placeholder="Your name"/>
+        </div>
+        <div>
+          <label for="email" class="block text-xs font-bold uppercase tracking-[0.15em] text-on-surface/50 mb-2">Email</label>
+          <input type="email" name="email" id="email" required
+                 class="w-full bg-surface-container-high border border-white/10 rounded-sm px-4 py-3 text-sm text-on-surface placeholder-on-surface/30 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all"
+                 placeholder="your@email.com"/>
+        </div>
+        <div>
+          <label for="message" class="block text-xs font-bold uppercase tracking-[0.15em] text-on-surface/50 mb-2">Message</label>
+          <textarea name="message" id="message" rows="5" required
+                    class="w-full bg-surface-container-high border border-white/10 rounded-sm px-4 py-3 text-sm text-on-surface placeholder-on-surface/30 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-all resize-none"
+                    placeholder="What's on your mind?"></textarea>
+        </div>
+        <button type="submit"
+                class="w-full bg-primary hover:bg-primary/90 text-on-primary py-4 rounded-sm font-bold text-sm uppercase tracking-[0.1em] flex items-center justify-center gap-2 transition-all active:scale-[0.98] shadow-[0px_8px_24px_rgba(0,229,204,0.25)]">
+          <span class="material-symbols-outlined text-lg">send</span>
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-16 md:py-20 border-t border-primary/10 bg-surface-container-lowest">
+  <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 max-w-7xl mx-auto gap-10 md:gap-12">
+    <div class="flex flex-col items-center md:items-start gap-2">
+      <span class="text-primary font-black tracking-tighter text-xl">Morrigan Black</span>
+      <p class="text-[10px] tracking-widest text-on-surface/30 uppercase">&copy; {new Date().getFullYear()} Morrigan Black. All rights reserved.</p>
+    </div>
+
+    <div class="flex flex-col items-center gap-3">
+      <p class="text-[9px] tracking-[0.3em] uppercase text-on-surface/30 font-bold">Find on Amazon</p>
+      <div class="flex flex-wrap justify-center items-center gap-2">
+        <a href="https://www.amazon.com/stores/Morrigan-Black/author/B0C6CGS49F" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/10 bg-surface-container-high text-[10px] font-bold text-on-surface/60 flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary/50 transition-all hover:scale-110" title="Amazon US">US</a>
+        <a href="https://www.amazon.co.uk/stores/Morrigan-Black/author/B0C6CGS49F" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/10 bg-surface-container-high text-[10px] font-bold text-on-surface/60 flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary/50 transition-all hover:scale-110" title="Amazon UK">UK</a>
+        <a href="https://www.amazon.ca/stores/Morrigan-Black/author/B0C6CGS49F" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/10 bg-surface-container-high text-[10px] font-bold text-on-surface/60 flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary/50 transition-all hover:scale-110" title="Amazon CA">CA</a>
+        <a href="https://www.amazon.com.au/stores/Morrigan-Black/author/B0C6CGS49F" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/10 bg-surface-container-high text-[10px] font-bold text-on-surface/60 flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary/50 transition-all hover:scale-110" title="Amazon AU">AU</a>
+        <a href="https://www.amazon.de/stores/Morrigan-Black/author/B0C6CGS49F" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/10 bg-surface-container-high text-[10px] font-bold text-on-surface/60 flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary/50 transition-all hover:scale-110" title="Amazon DE">DE</a>
+        <a href="https://www.amazon.fr/stores/Morrigan-Black/author/B0C6CGS49F" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/10 bg-surface-container-high text-[10px] font-bold text-on-surface/60 flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary/50 transition-all hover:scale-110" title="Amazon FR">FR</a>
+        <a href="https://www.amazon.it/stores/Morrigan-Black/author/B0C6CGS49F" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/10 bg-surface-container-high text-[10px] font-bold text-on-surface/60 flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary/50 transition-all hover:scale-110" title="Amazon IT">IT</a>
+        <a href="https://www.amazon.com.br/stores/Morrigan-Black/author/B0C6CGS49F" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full border border-white/10 bg-surface-container-high text-[10px] font-bold text-on-surface/60 flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary/50 transition-all hover:scale-110" title="Amazon BR">BR</a>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href="https://www.youtube.com/@MorriganBlack" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/5 bg-white/5 hover:border-youtube-red/50 text-on-surface/50 hover:text-youtube-red transition-all">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+      <a href="https://www.patreon.com/c/MorriganBlack452" target="_blank" rel="noopener noreferrer" aria-label="Patreon" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/5 bg-white/5 hover:border-patreon-coral/50 text-on-surface/50 hover:text-patreon-coral transition-all">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.82 2.41c3.96 0 7.18 3.24 7.18 7.21 0 3.96-3.22 7.18-7.18 7.18-3.97 0-7.21-3.22-7.21-7.18 0-3.97 3.24-7.21 7.21-7.21M2 21.6h3.5V2.41H2V21.6z"/></svg>
+      </a>
+      <a href="https://www.amazon.com/stores/Morrigan-Black/author/B0C6CGS49F" target="_blank" rel="noopener noreferrer" aria-label="Amazon" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/5 bg-white/5 hover:border-primary/50 text-on-surface/50 hover:text-primary transition-all">
+        <span class="material-symbols-outlined text-lg">shopping_bag</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="mt-12 text-center">
+    <p class="text-[9px] uppercase tracking-[0.5em] text-on-surface/15">Crafted in the Dark &bull; For the Sinners</p>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      nav.style.background = 'rgba(10, 10, 10, 0.92)';
+    } else {
+      nav.style.background = 'rgba(10, 10, 10, 0.7)';
+    }
+  });
+
+  const mobileToggle = document.getElementById('mobileToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuIcon = document.getElementById('menuIcon');
+  mobileToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+    menuIcon.textContent = mobileMenu.classList.contains('open') ? 'close' : 'menu';
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuIcon.textContent = 'menu';
+    });
+  });
+</script>
+
+</BaseLayout>

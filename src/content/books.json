@@ -1,0 +1,143 @@
+{
+  "amazonStores": {
+    "us": "https://www.amazon.com/stores/Morrigan-Black/author/B0C6CGS49F",
+    "ca": "https://www.amazon.ca/stores/Morrigan-Black/author/B0C6CGS49F",
+    "uk": "https://www.amazon.co.uk/stores/Morrigan-Black/author/B0C6CGS49F",
+    "au": "https://www.amazon.com.au/stores/Morrigan-Black/author/B0C6CGS49F",
+    "it": "https://www.amazon.it/stores/Morrigan-Black/author/B0C6CGS49F",
+    "br": "https://www.amazon.com.br/stores/Morrigan-Black/author/B0C6CGS49F",
+    "de": "https://www.amazon.de/stores/Morrigan-Black/author/B0C6CGS49F",
+    "fr": "https://www.amazon.fr/stores/Morrigan-Black/author/B0C6CGS49F"
+  },
+  "series": [
+    {
+      "name": "Knotty Alpha Guards",
+      "books": [
+        {
+          "title": "The Single Dad's Fake Mate",
+          "seriesNumber": "Book 1",
+          "cover": "/images/covers/single-dads-fake-mate.svg",
+          "logline": "I never thought I'd be pregnant and on the run, or that my salvation would come in the form of an Alpha lion shifter."
+        },
+        {
+          "title": "Guarding the Manny's Fanny",
+          "seriesNumber": "Book 2",
+          "cover": "/images/covers/guarding-mannys-fanny.svg",
+          "logline": "Ten years ago, he walked away because I couldn't give him cubs. Now he's hired me as his son's manny, and I'm about to learn I had it all wrong."
+        },
+        {
+          "title": "Knot His Cherry Boy",
+          "seriesNumber": "Book 3",
+          "cover": "/images/covers/knot-his-cherry-boy.svg",
+          "logline": "I've never been touched by an alpha and I hired a bodyguard to keep it that way. Too bad he's the one alpha I can't resist."
+        },
+        {
+          "title": "Knotting the Playboy Omega",
+          "seriesNumber": "Book 4",
+          "cover": "/images/covers/knotting-playboy-omega.svg",
+          "logline": "No alpha can resist my pheromones, until I met the one who can. And of course, he's the only one who can help me claim my inheritance."
+        }
+      ]
+    },
+    {
+      "name": "Highland Wolves",
+      "books": [
+        {
+          "title": "Claimed by the Alpha Laird",
+          "seriesNumber": "Book 1",
+          "cover": "/images/covers/claimed-alpha-laird.svg",
+          "logline": "Your body was made for me."
+        },
+        {
+          "title": "Mated to the Beast Alpha",
+          "seriesNumber": "Book 2",
+          "cover": "/images/covers/mated-beast-alpha.svg",
+          "logline": "They call him the Beast of the Highlands."
+        }
+      ]
+    },
+    {
+      "name": "Taken by the Titan",
+      "books": [
+        {
+          "title": "Taken by the Titan",
+          "seriesNumber": "Book 1",
+          "cover": "/images/covers/taken-by-titan.svg",
+          "logline": "When I stole from the titan prince, I didn't expect him to steal me."
+        },
+        {
+          "title": "Taken by the Titan: Homecoming",
+          "seriesNumber": "Book 2",
+          "cover": "/images/covers/taken-by-titan-homecoming.svg",
+          "logline": "Across worlds, their love remains unbreakable."
+        }
+      ]
+    },
+    {
+      "name": "Offworld Meat Market",
+      "books": [
+        {
+          "title": "Property of the Leviathan",
+          "seriesNumber": "Book 1",
+          "cover": "/images/covers/property-leviathan.svg",
+          "logline": "Everything in his ocean belongs to him, including me."
+        },
+        {
+          "title": "Sold! To the Beast Lord",
+          "seriesNumber": "Book 2",
+          "cover": "/images/covers/sold-beast-lord.svg",
+          "logline": "Lord. Master. Beast. He's all three and he's mine."
+        },
+        {
+          "title": "Owned by the Swarm!",
+          "seriesNumber": "Coming Soon",
+          "cover": "/images/covers/owned-by-swarm.svg",
+          "logline": "Coming soon...",
+          "comingSoon": true
+        }
+      ]
+    }
+  ],
+  "standalones": [
+    {
+      "title": "Blood Curse",
+      "cover": "/images/covers/blood-curse.svg",
+      "logline": "When an isolated Fae Mystic discovers his fated mate has a blood fetish, burns in the sun… and could be the bloodsucking enemy of his kind…"
+    },
+    {
+      "title": "Brass Knuckle Alpha",
+      "cover": "/images/covers/brass-knuckle-alpha.svg",
+      "logline": "An alpha's strength. An omega's secret. A bond neither of them wanted, but both desperately need."
+    },
+    {
+      "title": "Bred by the Alien Prince",
+      "cover": "/images/covers/bred-alien-prince.svg",
+      "logline": "A stowaway. An alien prince. Everything gone wrong. They never expected to steal each other's hearts."
+    },
+    {
+      "title": "Dracula: Bound in Blood",
+      "cover": "/images/covers/dracula-bound-blood.svg",
+      "logline": "Bound by Blood, Freed by Desire."
+    },
+    {
+      "title": "Fixing the Grumpy Pumpkin King",
+      "cover": "/images/covers/fixing-pumpkin-king.svg",
+      "logline": "There's a six-foot-five autumn deity with a literal pumpkin for a head living in my grandmother's mystical shop, and Lord Mabon is the most difficult roommate I've ever had."
+    },
+    {
+      "title": "Marked Under the Chained Moon",
+      "cover": "/images/covers/marked-chained-moon.svg",
+      "logline": "I woke up covered in blood with my dead alpha by my side."
+    },
+    {
+      "title": "Umami",
+      "cover": "/images/covers/umami.svg",
+      "logline": "He craves victory. He hungers for him."
+    },
+    {
+      "title": "Wolf-In-Law Daddy",
+      "cover": "/images/covers/wolf-in-law-daddy.svg",
+      "logline": "In a world without law, love is the deadliest sin."
+    }
+  ]
+}
