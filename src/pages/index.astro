@@ -46,40 +46,32 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <!-- ===== HERO ===== -->
 <section class="relative h-[92vh] min-h-[650px] w-full overflow-hidden bg-surface-container-lowest">
   <div class="absolute inset-0">
-    <img alt="Fed to the Rot cover art" class="w-full h-full object-cover"
-         src="/images/covers/Fed to the Rot_bk7.jpg"/>
+    <img alt="The Arachne's Web cover art" class="w-full h-full object-cover object-[50%_22%]"
+         src="/images/covers/2_VWcover.jpg"/>
     <div class="absolute inset-0 hero-gradient"></div>
   </div>
 
   <div class="relative h-full flex flex-col justify-end px-6 md:px-16 pb-24 md:pb-32 max-w-7xl mx-auto animate-hero">
     <div class="mb-5 flex items-center gap-4 flex-wrap">
-      <span class="px-3 py-1 bg-primary/10 border border-primary/30 text-primary text-[10px] font-bold tracking-[0.2em] rounded-sm uppercase">New Release</span>
+      <span class="px-3 py-1 bg-primary/10 border border-primary/30 text-primary text-[10px] font-bold tracking-[0.2em] rounded-sm uppercase">Coming Soon</span>
       <span class="flex items-center gap-1.5 text-primary text-xs font-bold">
         <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
-        Offworld Meat Market &mdash; Book 7
+        Vaultworks: Monsters Below &mdash; Book 2
       </span>
     </div>
 
     <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-black text-on-surface leading-[0.9] tracking-tighter mb-4 max-w-3xl uppercase">
-      Fed to the Rot
+      The Arachne's Web
     </h1>
 
     <p class="text-on-surface/70 text-base md:text-lg max-w-xl mb-8 leading-relaxed">
-      They threw Cass into the pit to be eaten. What crawled over him wanted him alive &mdash; and it wanted him open.
+      Erebus took a dangerous job to save his life. He left wearing an arachne's mark and a knot that wouldn't let him go.
     </p>
 
     <div class="flex flex-wrap items-center gap-3 mb-10">
-      <span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-wider rounded-full">Trapped</span>
-      <span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-wider rounded-full">Every Hole Filled</span>
-      <span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-wider rounded-full">Gentle Monster</span>
-    </div>
-
-    <div class="flex items-center gap-4 flex-wrap">
-      <a href="https://www.amazon.com/dp/B0HHSFF92F" target="_blank" rel="noopener noreferrer"
-         class="bg-primary hover:bg-primary/90 text-on-primary px-8 md:px-10 py-4 rounded-sm font-bold flex items-center gap-2 transition-all active:scale-95 shadow-[0px_10px_30px_rgba(0,229,204,0.3)] text-sm md:text-base">
-        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
-        Read Now
-      </a>
+      <span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-wider rounded-full">Obsessed</span>
+      <span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-wider rounded-full">Love at First Sight</span>
+      <span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-wider rounded-full">Touch Starved</span>
     </div>
   </div>
 </section>
@@ -119,6 +111,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Massive Size Difference</span>
           <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Possessive Touch-Starved Beast</span>
           <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Breeding</span>
+        </div>
+      </div>
+
+      <div class="flex-none w-48 md:w-72 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5 border-2 border-primary/30">
+          <img alt="The Arachne's Web" class="w-full h-full object-cover" src="/images/covers/2_VWcover.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute top-3 right-3">
+            <span class="bg-surface-container-lowest/80 backdrop-blur-sm text-primary text-[9px] font-black uppercase tracking-[0.15em] px-3 py-1 rounded-sm border border-primary/40">Coming Soon</span>
+          </div>
+          <div class="absolute bottom-0 left-0 p-4 md:p-6 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] mb-1">Book 2</p>
+            <h3 class="text-on-surface font-bold text-base md:text-xl leading-tight">The Arachne's Web</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1.5 mt-3">
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Obsessed</span>
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Love at First Sight</span>
+          <span class="px-2.5 py-1 bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold tracking-wider rounded-full">Touch Starved</span>
         </div>
       </div>
     </div>
