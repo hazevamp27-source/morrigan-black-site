@@ -47,12 +47,6 @@
     background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 50%);
   }
 
-  .youtube-glow { box-shadow: 0 0 40px rgba(255,0,0,0.1); }
-  .youtube-glow:hover { box-shadow: 0 0 60px rgba(255,0,0,0.2); }
-
-  .patreon-glow { box-shadow: 0 0 40px rgba(249,104,84,0.08); }
-  .patreon-glow:hover { box-shadow: 0 0 60px rgba(249,104,84,0.15); }
-
   .spotify-glow { box-shadow: 0 0 40px rgba(29,185,84,0.08); }
   .spotify-glow:hover { box-shadow: 0 0 60px rgba(29,185,84,0.15); }
 
@@ -79,7 +73,7 @@
   .scroll-arrow-btn.right { right: 8px; }
 
   .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-  .mobile-menu.open { max-height: 380px; }
+  .mobile-menu.open { max-height: 460px; }
 }
 
 @keyframes fadeUp {
