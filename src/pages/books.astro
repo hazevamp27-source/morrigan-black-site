@@ -1,0 +1,312 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Books" description="The Morrigan Black backlist: Knotty Alpha Guards, Highland Wolves, Taken by the Titan, and standalone oneshots.">
+
+<Nav active="books" />
+
+<main class="pt-32 md:pt-40">
+<div class="space-y-20 md:space-y-28 pb-24 md:pb-32">
+
+  <!-- Page header -->
+  <section class="px-6 md:px-16">
+    <p class="text-primary font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] mb-3 flex items-center gap-2">
+      <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+      From the Archives
+    </p>
+    <h1 class="font-headline text-4xl md:text-6xl font-black text-on-surface tracking-tighter uppercase mb-4">The Backlist</h1>
+    <p class="text-on-surface/60 text-sm md:text-base max-w-xl leading-relaxed">
+      Alpha guards, highland wolves, a titan or two, and a pile of oneshots. Looking for the newest books? <a href="/" class="text-primary hover:underline">Vaultworks and Offworld Meat Market are on the home page.</a>
+    </p>
+  </section>
+
+  <!-- Knotty Alpha Guards -->
+  <section class="px-6 md:px-16" id="backlist">
+    <h2 class="font-headline text-lg md:text-xl text-on-surface font-black tracking-tight flex items-center gap-2 mb-6">
+      Knotty Alpha Guards
+      <span class="text-primary/60 text-sm font-bold">&mdash; 4 Books</span>
+    </h2>
+    <div class="scroll-row">
+      <button class="scroll-arrow-btn left" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:-300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_left</span></button>
+      <button class="scroll-arrow-btn right" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_right</span></button>
+    <div class="book-scroll flex gap-3 md:gap-5 overflow-x-auto no-scrollbar pr-16">
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="The Single Dad's Fake Mate" class="w-full h-full object-cover" src="/images/covers/single dads fake mate_bk1.jpeg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 1</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">The Single Dad's Fake Mate</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Fake Dating</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Single Dad</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Forced Proximity</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Guarding the Manny's Fanny" class="w-full h-full object-cover" src="/images/covers/guarding the mannys fanny_bk2.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 2</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Guarding the Manny's Fanny</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Second Chance</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Knot His Cherry Boy" class="w-full h-full object-cover" src="/images/covers/knot his cherry boy_bk3.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 3</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Knot His Cherry Boy</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Virgin</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Enemies to Lovers</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Forced Proximity</span>
+        </div>
+      </div>
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Knotting the Playboy Omega" class="w-full h-full object-cover" src="/images/covers/knotting the playboy omega_bk4.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 4</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Knotting the Playboy Omega</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Billionaire</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Power Bottom</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Grumpy/Sunshine</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Highland Wolves -->
+  <section class="px-6 md:px-16">
+    <h2 class="font-headline text-lg md:text-xl text-on-surface font-black tracking-tight flex items-center gap-2 mb-6">
+      Highland Wolves
+      <span class="text-primary/60 text-sm font-bold">&mdash; 2 Books</span>
+    </h2>
+    <div class="scroll-row">
+      <button class="scroll-arrow-btn left" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:-300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_left</span></button>
+      <button class="scroll-arrow-btn right" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_right</span></button>
+    <div class="book-scroll flex gap-3 md:gap-5 overflow-x-auto no-scrollbar pr-16">
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Claimed by the Alpha Laird" class="w-full h-full object-cover" src="/images/covers/claimed by the alpha laird_bk1.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 1</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Claimed by the Alpha Laird</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Fated Mates</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Time Travel</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Mated to the Beast Alpha" class="w-full h-full object-cover" src="/images/covers/mated to the beast alpha_bk2.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 2</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Mated to the Beast Alpha</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Fated Mates</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Time Travel</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Taken by the Titan -->
+  <section class="px-6 md:px-16">
+    <h2 class="font-headline text-lg md:text-xl text-on-surface font-black tracking-tight flex items-center gap-2 mb-6">
+      Taken by the Titan
+      <span class="text-primary/60 text-sm font-bold">&mdash; 2 Books</span>
+    </h2>
+    <div class="scroll-row">
+      <button class="scroll-arrow-btn left" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:-300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_left</span></button>
+      <button class="scroll-arrow-btn right" onclick="this.parentElement.querySelector('.book-scroll').scrollBy({left:300,behavior:'smooth'})"><span class="material-symbols-outlined text-lg">chevron_right</span></button>
+    <div class="book-scroll flex gap-3 md:gap-5 overflow-x-auto no-scrollbar pr-16">
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Taken by the Titan" class="w-full h-full object-cover" src="/images/covers/taken by the titan_bk1.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 1</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Taken by the Titan</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Size Difference</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Enslavement</span>
+        </div>
+      </div>
+      <div class="flex-none w-36 md:w-48 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Taken by the Titan: Homecoming" class="w-full h-full object-cover" src="/images/covers/taken by the titan homecoming_bk2.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 md:p-4 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <p class="text-primary font-bold text-[9px] uppercase tracking-[0.2em] mb-1">Book 2</p>
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Taken by the Titan: Homecoming</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Size Difference</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Enslavement</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Oneshots -->
+  <section class="px-6 md:px-16">
+    <h2 class="font-headline text-lg md:text-xl text-on-surface font-black tracking-tight flex items-center gap-2 mb-6">
+      Oneshots
+      <span class="text-primary/60 text-sm font-bold">&mdash; 8 Titles</span>
+    </h2>
+    <div class="grid grid-cols-4 gap-2 md:gap-3">
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Dracula: Bound in Blood" class="w-full h-full object-cover" src="/images/covers/dracula bound in blood.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Dracula: Bound in Blood</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Vampire</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Gothic Romance</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Blood Curse" class="w-full h-full object-cover" src="/images/covers/blood curse.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Blood Curse</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Vampire</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Urban Fantasy</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Marked Under the Chained Moon" class="w-full h-full object-cover" src="/images/covers/marked under the chained moon.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Marked Under the Chained Moon</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Rejected Mates</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Prison</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Forced Proximity</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Second Chance</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Wolf Shifter</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Umami" class="w-full h-full object-cover" src="/images/covers/umami.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Umami</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Demons</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Billionaire</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Gothic</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Wolf-In-Law Daddy" class="w-full h-full object-cover" src="/images/covers/daddy wolf in law.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Wolf-In-Law Daddy</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Father-in-Law/Son-in-Law</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Age Difference</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Wolf Shifter</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Bred by the Alien Prince" class="w-full h-full object-cover" src="/images/covers/bred by the alien prince.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Bred by the Alien Prince</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Captivity</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Fated Mates</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Fixing the Grumpy Pumpkin King" class="w-full h-full object-cover" src="/images/covers/fixing the grumpy pumpkin king.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Fixing the Grumpy Pumpkin King</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Grumpy/Sunshine</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Halloween</span>
+        </div>
+      </div>
+      <div class="group cursor-pointer transition-all duration-500 hover:-translate-y-2">
+        <div class="aspect-[2/3] relative rounded-sm overflow-hidden bg-surface-container-high ring-1 ring-white/5">
+          <img alt="Brass Knuckle Alpha" class="w-full h-full object-cover" src="/images/covers/brass knuckle alpha.jpg"/>
+          <div class="absolute inset-0 card-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 p-3 translate-y-4 group-hover:translate-y-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <h3 class="text-on-surface font-bold text-sm leading-tight">Brass Knuckle Alpha</h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-2">
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Fated Mates</span>
+          <span class="px-2 py-0.5 bg-primary/10 border border-primary/20 text-primary text-[8px] font-bold tracking-wider rounded-full">Mpreg</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<Footer />
+
+</BaseLayout>
