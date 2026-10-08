@@ -34,6 +34,15 @@
       linear-gradient(to top, #0a0a0a 0%, rgba(10,10,10,0) 35%);
   }
 
+  /* On phones the whole cover fits in the hero, so fade out its printed title behind the text */
+  @media (max-width: 767px) {
+    .hero-gradient {
+      background:
+        linear-gradient(to top, #0a0a0a 0%, #0a0a0a 28%, rgba(10,10,10,0.8) 50%, rgba(10,10,10,0.25) 72%, rgba(10,10,10,0) 100%),
+        linear-gradient(to right, rgba(10,10,10,0.6) 0%, rgba(10,10,10,0) 70%);
+    }
+  }
+
   .card-gradient {
     background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 50%);
   }
