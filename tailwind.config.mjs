@@ -25,6 +25,7 @@ export default {
         'error-dim': '#d73357',
         'youtube-red': '#FF0000',
         'patreon-coral': '#f96854',
+        'spotify-green': '#1DB954',
       },
       fontFamily: {
         headline: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],

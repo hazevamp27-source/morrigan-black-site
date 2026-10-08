@@ -44,6 +44,9 @@
   .patreon-glow { box-shadow: 0 0 40px rgba(249,104,84,0.08); }
   .patreon-glow:hover { box-shadow: 0 0 60px rgba(249,104,84,0.15); }
 
+  .spotify-glow { box-shadow: 0 0 40px rgba(29,185,84,0.08); }
+  .spotify-glow:hover { box-shadow: 0 0 60px rgba(29,185,84,0.15); }
+
   .scroll-row { position: relative; }
   .scroll-row::after {
     content: '';
@@ -67,7 +70,7 @@
   .scroll-arrow-btn.right { right: 8px; }
 
   .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-  .mobile-menu.open { max-height: 300px; }
+  .mobile-menu.open { max-height: 380px; }
 }
 
 @keyframes fadeUp {
